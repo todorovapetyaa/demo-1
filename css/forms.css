@@ -1,0 +1,14 @@
+.map {
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.aspect-ratio-16-9 {
+    /* width: 100%; */
+    padding-top:56.25%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.3em;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+}

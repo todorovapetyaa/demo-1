@@ -1,0 +1,68 @@
+
+
+/* FLEX BOX Navigation */
+
+nav {
+    margin-left: auto; /*or justify-content: space-between;*/
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav li {
+    display: block;
+}
+
+nav a {
+    display: flex;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background:#333;
+    color: #fff;
+}
+
+.site-nav {
+    font-weight: 600;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav li:hover > a,
+nav a:hover {
+    background-color: var(--theam-color, #f50 ) ; ;
+}
+
+nav li a::before {
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 0.8rem;
+}
+
+
+nav li.page-title-about a:before {
+    content: '\f47f';
+}
+
+nav li.page-title-blog a:before {
+    content: '\f781';
+}
+
+nav li.page-title-contacts a:before {
+    content: '\f2a0';
+}
+
+nav li.page-title-home a:before {
+    content: '\f015';
+}

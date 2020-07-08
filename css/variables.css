@@ -1,0 +1,13 @@
+:root {
+
+    --font-family-headings:'Noto Serif', serif;
+    --font-family-main: Roboto, sans-serif;
+
+    --line-height: 1.5;
+    --font-size: 14px;
+
+    --text-color-main: #424242;
+    --theam-color: #6C387F;
+
+    --layout-width: 65em;
+}
