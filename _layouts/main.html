@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/css/site.css">
     <title>{{site.title}}</title>
 </head>
 <body>
     
     <div class="site">
         <header class="site-header">
-            <h2><a href="/">{{site.title}}</a></h2>
-            <h3>{{page.title}}</h3>
+            <div class="site-branding">
+                <h2 class="site-title"><a href="/">{{site.title}}</a></h2>
+                <h3>{{page.title}}</h3>
+            </div>
+            
             <nav>
-                <ul>
+                <ul class="site-nav">
                     {% for page in site.pages %}
                         {% if page.title%}
-                        <li><a href="{{page.url}}">{{page.title}}</a></li>
+                        <li class="page-title-{{page.title | slugify}}"><a href="{{page.url}}">{{page.title}}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
@@ -25,7 +30,7 @@
             {{content}}
         </main>
         <footer class="site-footer">
-            <p>All rights reserved copyrghts 2020</p>
+            <p>{{site.title}} &copy All rights reserved</p>
         </footer>
     </div>
 </body>
